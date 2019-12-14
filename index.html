@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: #221709;
+            color: #fff;
+            text-align: center;
+        }
+
+        canvas {
+            border: solid .4em #deb887;
+            height: 80vh;
+        }
+
+        .score-container {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .score-container div {
+            flex: 1;
+        }
+
+        .btn-container {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="score-container">
+        <div>
+            Total Weight: <span id="leftWeight"></span> <br />
+            Momentum: <span id="leftMomentum"></span>
+        </div>
+        <div>
+            Total Weight: <span id="rightWeight"></span> <br />
+            Momentum: <span id="rightMomentum"></span>
+        </div>
+    </div>
+    <canvas id="simulation" width="500" height="300"></canvas>
+    <div class="btn-container">
+        <button id="pauseResume">Pause / Resume</button>
+        Speed: <span id="speed"></span>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
